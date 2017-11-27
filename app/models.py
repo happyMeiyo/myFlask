@@ -231,6 +231,8 @@ class Post(db.Model):
                         'h1', 'h2', 'h3', 'p']
         target.body_html = bleach.linkify(bleach.clean(markdown(value, output_format='html'),
                                                       tags=allowed_tags, strip=True))
+
+
 db.event.listen(Post.body, 'set', Post.on_change_body)
 
 
