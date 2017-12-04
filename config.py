@@ -15,6 +15,10 @@ class Config:
     FLASKY_MAIL_SENDER = 'dengmingyao <dengmingyao2008@yeah.net>'
     FLASKY_ADMIN = os.environ.get('FLASKY_ADMIN')
     FLASKY_POSTS_PER_PAGE = 10
+    FLASKY_FOLLOWERS_PER_PAGE = 10
+    FLASKY_FOLLOWED_PER_PAGE = 10
+    BOOTSTRAP_SERVE_LOCAL = True
+
 
     @staticmethod
     def init_app(app):
