@@ -9,7 +9,8 @@
 from flask import jsonify, request, g, abort, url_for, current_app
 from . import api
 from ..models import Post, Permission
-from .decorators import permission_required
+from ..decorators import permission_required
+from .. import db
 
 
 @api.route('/posts/', methods=['POST'])
