@@ -18,6 +18,7 @@ class Config:
     FLASKY_FOLLOWERS_PER_PAGE = 10
     FLASKY_FOLLOWED_PER_PAGE = 10
     BOOTSTRAP_SERVE_LOCAL = True
+    FLASKY_COMMENTS_PER_PAGE = 5
 
 
     @staticmethod

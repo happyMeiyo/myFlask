@@ -50,4 +50,10 @@ class PostForm(FlaskForm):
     submit = SubmitField('Submit')
 
 
+class CommentForm(FlaskForm):
+    body = StringField(' ', validators=[DataRequired()])
+    submit = SubmitField('Submit')
+
+
+
 
